@@ -3,13 +3,13 @@
 </head>
 <body>
 
-<%- partial('./shared/header') %>
+<%- inlude ./shared/_header.ejs %>
 
 <div class="container" id="main">
 
 </div>
 
-<%- partial('./shared/footer') %>
+<%- include ./shared/_footer.ejs %>
 
 <script>
 var posts = <%- JSON.stringify(posts) %>;
