@@ -3,12 +3,12 @@
 </head>
 <body>
 
-<%- partial('./shared/header') %>
+<%- include ./shared/_header.ejs %>
 
 <div class="container" id="main">
 </div>
 
-<%- partial('./shared/footer') %>
+<%- include ./shared/_footer.ejs %>
 
 <script>
 var users = <%- JSON.stringify(users) %>;
