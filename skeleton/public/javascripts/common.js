@@ -85,7 +85,7 @@ $(function () {
     return false; 
   });
 
-  if (config.usersNav.enable) {
+  if (config && config.usersNav.enable) {
 
     // Fixed users navigation when show scrollToTop
     var $scrollToTop2 = $('#scrollToTop2');
