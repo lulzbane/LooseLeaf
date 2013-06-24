@@ -11,7 +11,7 @@
 
       <ul class="nav secondary-nav" id="loginLink">
         <li><a href="/users">users</a></li>
-        <% if (session.user) { %>
+        <% if (session && session.user) { %>
         <li><a href="#" id="openFiles">files</a></li>
         <% if (!/^\/users/.test(url)) { %>
         <li><a href="#" id="newpost">new post</a></li>
