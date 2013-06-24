@@ -118,7 +118,7 @@ $(function () {
   /*
    * Comments
    */
-  if (!config.disqus_shortname && posts.length) {
+  if ((typeof config != 'undefined') && !config.disqus_shortname && posts.length) {
 
   var $comments = $('.comments');
   var $lastComment = $comments.find('dt:last');
