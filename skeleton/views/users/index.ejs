@@ -41,7 +41,7 @@ var users = <%- JSON.stringify(users) %>;
 </script>
 <% if (req.session.user) { %>
 <script>
-var user = <%- JSON.stringify(req.session.user) %>;
+var user = <%- JSON.stringify(session.user) %>;
 </script>
 <% } %>
 <script src="/javascripts/common.js"></script>
