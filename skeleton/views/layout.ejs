@@ -12,7 +12,7 @@ var config = <%- JSON.stringify(config) %>;
 
 <%- body %>
 
-<% if (req.session.user) { %>
+<% if (session.user) { %>
 <script src="/javascripts/files.js"></script>
 <% } %>
 
