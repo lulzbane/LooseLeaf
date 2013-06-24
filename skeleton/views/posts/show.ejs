@@ -13,9 +13,9 @@
 <script>
 var posts = <%- JSON.stringify(posts) %>;
 </script>
-<% if (req.session.user) { %>
+<% if (session.user) { %>
 <script>
-var user = <%- JSON.stringify(req.session.user) %>;
+var user = <%- JSON.stringify(session.user) %>;
 </script>
 <% } %>
 <script>
