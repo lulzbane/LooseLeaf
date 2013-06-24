@@ -13,7 +13,7 @@
 <script>
 var users = <%- JSON.stringify(users) %>;
 </script>
-<% if (session.user) { %>
+<% if (session && session.user) { %>
 <script>
 var user = <%- JSON.stringify(session.user) %>;
 </script>
