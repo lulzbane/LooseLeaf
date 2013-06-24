@@ -8,7 +8,7 @@
 
 <script>
 var config;
-<% if (session && session.user) { %>
+<% if (config) { %>
 config = <%- JSON.stringify(config) %>;
 <% } %>
 </script>
